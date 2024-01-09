@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+                color: aqua;
+                font-family: 'Courier New', Courier, monospace;
+                margin: 0%;
+            }
+            h1 {
+  font-family: "Caveat", cursive;
+  color:goldenrod;
+  background-color: beige;
+}
+.subtitle, nav a{
+  color:azure;
+  text-transform: uppercase;
+
+}
+.cn{
+    width: 100%;
+    max-width: 900px;
+}
+.c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background-color:darkslategrey;
+    padding: 3px;
+}
+nav{
+    text-align: left;
+    text-decoration: none;
+
+}
+@media (max-width: 640px) {
+  .cn {
+    text-align: center;
+  }
+  .c {
+    flex-direction: column;
+  }
+  nav  {
+    flex-direction: column;
+    margin: 0.8em 0;
+  }
+  body{
+    background-color: cornflowerblue;
+  }
+}
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="cn c">
+                <div class="ti">
+            <h1>Navigation bar</h1>
+    <p class="subtitle">Navbar Demo With Flexbox & Media Queries</p>
+    </div>
+    <nav>
+      
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      
+    </nav>
+    </div>
+        </header>
+    </body>
+</html>

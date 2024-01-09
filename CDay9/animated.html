@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <tityle>
+            HOT-AIR
+        </tityle>
+        <style>
+            .air{
+                background-image:url(../Imagesc/hot-air.jpg);
+                background-repeat: no-repeat;
+                width: 300px;
+                height: 300px;
+                background-size: contain;
+                position: absolute;
+                margin-bottom: 0%;
+                margin-left: 30%;
+                animation:fly 40s linear forwards, up 2s infinite;
+                display: inline-block;
+                overflow: hidden;
+            }
+            @keyframes fly{
+                from{
+                    bottom: 0%;
+                }
+                to{bottom: 100%;
+
+                }
+            }
+
+
+            @keyframes up{
+                from{
+                     translate: 0 ;
+    transform: rotate;
+    animation-timing-function:cubic-bezier(1, 0, 0, 1)
+                }
+
+            25% {
+    translate: 10px ;
+    transform: rotate(3deg);
+    animation-timing-function: cubic-bezier(0.7, 0.0, 0.9, 0.7);
+  }
+  50% {
+    translate: 0 ;
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.1, 0.3, 0.3, 1);
+  }
+  75% {
+    translate: -10px ;
+    transform: rotate(-3deg);
+    animation-timing-function: cubic-bezier(0.7, 0.0, 0.9, 0.7);
+  }
+}
+  to {
+    translate:initial;
+    transform: rotate(0deg);
+  }
+  body{
+    background-color: black;
+  }
+  .moon{
+    background-image:url(../Imagesc/moonl.jpg);
+    opacity: 1.2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 0%;
+    display: inline-block;
+    animation: mo 35s linear, R 4s infinite;
+  }
+  @keyframes mo{
+    0%{
+        transform: rotate(-20deg);
+
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+  }
+  .grass{
+    background-image:url(../Imagesc/grass.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    left: 35%;
+    display:block;
+    animation: gr 2s linear infinite alternate,
+  }
+  .grass1{
+    background-image:url(../Imagesc/grass.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+    display:block;
+    animation: gr 2s linear infinite alternate,
+  }
+  .grass2{
+    background-image:url(../Imagesc/grass.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    display:block;
+    animation: gr 2s linear infinite alternate,
+  }
+  .grass3{
+    background-image:url(../Imagesc/grass.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    left: 60%;
+    display:block;
+    animation: gr 2s linear infinite alternate,
+  }
+
+  
+  .cloud{
+    background-image: url(../Imagesc/clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 0%;
+    animation: mv 30s linear ,cl 50s infinite;
+  }
+  @keyframes cl{
+    0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100%{
+    left: 80%;
+  }
+  }
+  .cloud1{
+    background-image: url(../Imagesc/clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    animation: mv1 50s linear,cl1 35s infinite;
+
+  }
+  @keyframes mv1 {
+    0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100%{
+    left: 80%;
+  }
+  }
+
+  </style>
+  </head>
+  <body>
+    <div 
+    class="air">
+ </div>
+
+    <div
+     class="moon">
+ </div>
+ <div class="grass">
+
+ </div>
+ <div class="grass1">
+
+ </div>
+ <div class="grass2">
+
+ </div>
+ <div class="grass3">
+
+ </div>
+ <div class="cloud">
+
+ </div>
+ <div class="cloud1">
+
+
+ </div>
+
+  </body>
+  </html>
+

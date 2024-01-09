@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: darkgray;
+                color:ghostwhite;
+                font-family: 'Courier New', Courier, monospace;
+                margin: 0%;
+            }
+            
+            .di{
+                display: flex;
+                justify-content:space-around
+            }
+            .nav{
+                display: flex;
+                width: 100%;
+                max-width: 900px;
+                display: flex;
+    justify-content: space-between;
+    align-items: center;
+            }
+            header{
+                background-color: chocolate;
+
+            }
+
+@media screen and (max-width:799px){
+    .nav{
+        flex-direction: column;
+        background-color: bisque;
+        color: black;
+        text-align: center;
+
+
+    }
+    body{
+        flex-direction: column;
+        background-color: black;
+        color: bisque;
+        text-align: center;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: bisque;
+        text-align: center;
+    }
+    
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <h1>Responsive</h1>
+                <a href="#">photos</a>
+                <a href="#">About</a>
+                <a href="#">Support</a>
+            </div>
+        </header>
+        <div class="di">
+        <div id="c">
+            <img src="../Imagesc/comrade.jpg" width="200px" height="200px">
+            <h3>Dear comrade</h3>
+
+        </div>
+        <div id="c">
+            <img src="../Imagesc/deomali.jpg" width="200px" height="200px">
+            <h3>Deomali</h3>
+        </div>
+        <div id="c">
+            <img src="../Imagesc/sun.jpg" width="200px" height="200px">
+            <h3>Sun</h3>
+        </div>
+        <div id="c">
+            <img src="../Imagesc/Araku Valley.jpg" width="200px" height="200px">
+            <h3>Aruku valley</h3>
+           
+        </div>
+        </div>
+    </body>
+</html>
