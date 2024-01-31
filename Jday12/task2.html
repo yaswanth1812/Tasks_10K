@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    </div>
+    <script>
+        var y= document.getElementsByTagName("div");
+        for(i=0;i<=20;i++){
+            var aa = document.createElement("h1");
+            aa.innerText=`yaswanth ${i}`;
+            y[0].appendChild(aa)
+        }
+        console.log(y[0].innerText)
+    </script>
+</body>
+</html>
