@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <script>
+    debugger
+    var b=document.createElement("button")
+    document.body.appendChild(b)
+    b.innerText="15"
+   b.addEventListener("click",first)
+
+    var b1=document.createElement("button")
+    document.body.appendChild(b1)
+    b1.innerText="45"
+    b1.addEventListener("click",second)
+
+    var b2=document.createElement("button")
+    document.body.appendChild(b2)
+    b2.innerText="85"
+    b2.addEventListener("click",third)
+
+    var b3=document.createElement("button")
+    document.body.appendChild(b3)
+    b3.innerText="100"
+b3.addEventListener("click",fourth)
+
+    var d=document.createElement("div") 
+  document.body.appendChild(d)
+    d.style.backgroundColor="white"
+ d.style.width="0px"
+ d.style.height="30px"
+ d.style.marginTop="100px"
+ 
+ 
+    function first()
+    {
+     d.style.width="15%"
+     d.style.backgroundColor="green"
+    
+    }
+
+    function second()
+    {
+     d.style.width="45%"
+     d.style.backgroundColor="blue"
+    
+    }
+
+    function third()
+    {
+     d.style.width="85%"
+     d.style.backgroundColor="orange"
+    
+    }
+    
+    function fourth(){
+        d.style.width="100%"
+        d.style.backgroundColor="red"
+    }
+</script>
+
+</body>
+</html>
