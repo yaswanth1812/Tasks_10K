@@ -258,7 +258,7 @@ var a= [
         }
     }
 ]
-for(i=0;i<a.length;i++){
+for(let i=0;i<a.length;i++){
 
 
 
@@ -294,30 +294,13 @@ d.appendChild(bu)
 bu.innerText="click here"
 bu.addEventListener("click",pg)
 
-}
+
 function pg(){
    window.location.assign("./storage.html")
 //    window.localStorage.getItem("")
    window.localStorage.setItem("im",a[i]["image"])
 }
-
-
-
-//  var div2=document.createElement("div")
-//             document.body.appendChild(div2)
-// var b=document.createElement("button")
-// div2.appendChild(b)
-// div2.setAttribute("class","c")
-// b.innerText="back"
-//  b.addEventListener("click",backk)
-// //  window.sessionStorage.setItem("image","a[i]["image"]")
-//  function backk(){
-//  window.history.back("./Bom/login.html");
-
-//  } 
-        
-
-        
+}      
     </script>
 </body>
 </html>
