@@ -19,9 +19,6 @@
     }
 </style>
 <body>
-    <table>
-
-    </table>
    
     <script>
         var a=[
@@ -259,28 +256,34 @@
 ]
 
 var t=document.createElement("table");
-// document.body.appendChild(t)
+document.body.appendChild(t)
+
+
 for(i=0;i<a.length;i++){
 var t=document.getElementsByTagName("table")
 var tr1=document.createElement("tr")
+t[0].appendChild(tr1)
+
 var td1=document.createElement("td")
+tr1.appendChild(td1)
+td1.innerText=a[i]["id"];
+
 var td2=document.createElement("td")
+tr1.appendChild(td2)
+td2.innerText=a[i]["title"];
+
 var td3=document.createElement("td")
+tr1.appendChild(td3)
+td3.innerText=a[i]["price"];
+
 var td4=document.createElement("td")
+tr1.appendChild(td4)
+
 
 var imgg=document.createElement("img")
-
-td1.innerText=a[i]["id"];
-td2.innerText=a[i]["title"];
-td3.innerText=a[i]["price"];
 td4.appendChild(imgg) 
 imgg.setAttribute("src",a[i]["image"]);
 
-t[0].appendChild(tr1)
-tr1.appendChild(td1)
-tr1.appendChild(td2)
-tr1.appendChild(td3)
-tr1.appendChild(td4)
 
 }
     </script>

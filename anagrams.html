@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger
+        var a=["angeor","rong","oregna"]
+str="orange"
+o=[]
+function anagrams(s1,s2){
+    m=s1.split('').sort().join('');
+    n=s2.split('').sort().join('');
+    return m===n;
+}
+for(i=0;i<a.length;i++){
+    if(anagrams(a[i],str)){
+        o.push(a[i]);
+    }
+}
+console.log(o)
+    </script>
+</body>
+</html>
