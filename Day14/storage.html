@@ -9,12 +9,33 @@
     <h1>your product</h1>
     
     <script>
-        var g=localStorage.getItem("im")
-        var ims=document.createElement("img")
-        document.body.appendChild(ims)
-        ims.setAttribute("src",g)
-        ims.style.width="200px"
-        document.body.appendChild(g)   
+    
+        var storedDetails = JSON.parse(localStorage.getItem("productDetails"));
+    
+        var ims = document.createElement("img");
+        document.body.appendChild(ims);
+        ims.setAttribute("src", storedDetails.image);
+        ims.style.width = "200px";
+
+        var detailsContainer = document.createElement("div");
+        document.body.appendChild(detailsContainer);
+    
+        var idParagraph = document.createElement("p");
+        detailsContainer.appendChild(idParagraph);
+        idParagraph.innerText = "ID: " + storedDetails.id;
+    
+        var titleParagraph = document.createElement("p");
+        detailsContainer.appendChild(titleParagraph);
+        titleParagraph.innerText = "Title: " + storedDetails.title;
+    
+        var priceParagraph = document.createElement("p");
+        detailsContainer.appendChild(priceParagraph);
+        priceParagraph.innerText = "Price: " + storedDetails.price;
+    
+        var rateParagraph = document.createElement("p");
+        detailsContainer.appendChild(rateParagraph);
+        rateParagraph.innerText = "Rate: " + storedDetails.rate;
     </script>
+    
 </body>
 </html>

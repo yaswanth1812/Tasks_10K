@@ -263,7 +263,7 @@ var a= [
     }
 ]
 
-for(let i=0;i<a.length;i++){
+for(let i=0;i<a.length;i++){ 
 
 
 
@@ -297,15 +297,22 @@ p3.innerText=a[i]["category"]
 var bu=document.createElement("button")
 d.appendChild(bu)
 bu.innerText="click here"
-bu.addEventListener("click",pg)
+bu.addEventListener("click",function (){
 
 
-function pg(){
-   window.location.assign("./storage.html")
-//    window.localStorage.getItem("")
-   window.localStorage.setItem("im",a[i]["image"])
+    var productDetails = {
+            id: a[i]["id"],
+            title: a[i]["title"],
+            price: a[i]["price"],
+            rate: a[i]["rating"]["rate"],
+            image: a[i]["image"]
+        };
+
+        localStorage.setItem("productDetails", JSON.stringify(productDetails));
+
+        window.location.assign("./storage.html");
+    });
 }
-}      
     </script>
 </body>
 </html>
